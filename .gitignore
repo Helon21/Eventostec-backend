@@ -6,6 +6,7 @@ target/
 *.Zone.Identifier
 .mvn/wrapper/maven-wrapper.properties
 .gitattributes
+src/main/resources/application.yml
 
 ### STS ###
 .apt_generated
