@@ -1,0 +1,1 @@
+## Projeto guiado com aula no youtube da Fernanda Kipper, para aprender mais sobre backend e AWS usando java e spring. Link do vídeo que estou usando para praticar: https://www.youtube.com/watch?v=d0KaNzAMVO4&t=805s&ab_channel=FernandaKipper%7CDev
