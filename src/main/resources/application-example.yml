@@ -2,10 +2,23 @@ spring:
   application:
     name: api
   datasource:
-    url: jdbc:postgresql://localhost:db-port/eventostec
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:port/dbName
+    username: dbUsername
+    password: dbPassword
+    driver-class-name: org.postgresql.Driver
   jpa:
-    hibernate:
-      ddl-auto: update
     show-sql: true
+  flyway:
+    baseline-description: true
+    baseline-on-migrate: true
+    create-schemas: true
+    default-schema: public
+    enabled: true
+    locations: path-to-migrations
+    schemas: public
+    validate-on-migrate: true
+aws:
+  region: AWSRegion
+  accessKey: AWSCredentialAccessKey
+  secretKey: AWSCredentialSecretKey
+  bucketName: AWSBucketName
