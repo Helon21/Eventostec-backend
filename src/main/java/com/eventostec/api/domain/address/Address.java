@@ -2,11 +2,19 @@ package com.eventostec.api.domain.address;
 
 import com.eventostec.api.domain.event.Event;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Table(name = "address")
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Address {
 
     @Id
@@ -14,9 +22,9 @@ public class Address {
     private UUID id;
 
     private String city;
-    private String uf;
+    private String state;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "event_id")
     private Event event;
 }
